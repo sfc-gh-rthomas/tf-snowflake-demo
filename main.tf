@@ -1,7 +1,9 @@
-terraform { required_providers {
-snowflake = {
-source = "chanzuckerberg/snowflake" version = "0.25.16"
-} }
+terraform { 
+ required_providers {
+  snowflake = {
+   source = "chanzuckerberg/snowflake" version = "0.25.16"
+           } 
+      }
 }
 provider "snowflake" {
 role = "TF_ROLE" }
